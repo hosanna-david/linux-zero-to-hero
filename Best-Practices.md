@@ -78,9 +78,9 @@
 <pre class="wp-block-code"><code>sudo vim /etc/ssh/sshd_config</code></pre>
 <p>2. Find the <strong><code>PermitRootLogin</code></strong> line.</p>
 <p>3. Change the value from <strong><code>yes</code></strong> to <strong><code>no</code></strong>.</p>
-<p>4. <a href="https://phoenixnap.com/kb/how-to-vim-save-quit-exit" target="_blank" rel="noreferrer noopener">Save the changes and exit the file</a>.</p>
+<p>4. Save the changes and exit the file.</p>
 <p>5. Restart the SSH service to apply the changes.</p>
-<div class="notice-note">
+<div>
 <div></div>
 <div class="notice-text"><p><strong>Note</strong>: Disabling root login can prevent legitimate users from performing administrative tasks on the system. Ensure that authorized users have the necessary permissions by creating a regular user account with administrative privileges and add the user to the sudo group</a>.</p>
 </div>
@@ -95,39 +95,36 @@
 <p>A non-root account with a UID of 0 is effectively equivalent to the root account, creating a significant security risk.</p>
 <p>To ensure that no non-root accounts have a UID of 0, run:</p>
 <pre class="wp-block-code"><code>sudo awk -F: &#039;($3 == &quot;0&quot;) {print}</code></pre>
-<div class="wp-block-image">
-<figure class="aligncenter size-full"><img decoding="async" width="800" height="73" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%2073'%3E%3C/svg%3E" alt="sudo awk -F terminal output" class="wp-image-159156" data-lazy-srcset="https://phoenixnap.com/kb/wp-content/uploads/2023/02/sudo-awk-f-3-0-print-etc-passwd-terminal-output.png 800w, https://phoenixnap.com/kb/wp-content/uploads/2023/02/sudo-awk-f-3-0-print-etc-passwd-terminal-output-300x27.png 300w, https://phoenixnap.com/kb/wp-content/uploads/2023/02/sudo-awk-f-3-0-print-etc-passwd-terminal-output-768x70.png 768w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="https://phoenixnap.com/kb/wp-content/uploads/2023/02/sudo-awk-f-3-0-print-etc-passwd-terminal-output.png" /><noscript><img decoding="async" width="800" height="73" src="https://phoenixnap.com/kb/wp-content/uploads/2023/02/sudo-awk-f-3-0-print-etc-passwd-terminal-output.png" alt="sudo awk -F terminal output" class="wp-image-159156" srcset="https://phoenixnap.com/kb/wp-content/uploads/2023/02/sudo-awk-f-3-0-print-etc-passwd-terminal-output.png 800w, https://phoenixnap.com/kb/wp-content/uploads/2023/02/sudo-awk-f-3-0-print-etc-passwd-terminal-output-300x27.png 300w, https://phoenixnap.com/kb/wp-content/uploads/2023/02/sudo-awk-f-3-0-print-etc-passwd-terminal-output-768x70.png 768w" sizes="(max-width: 800px) 100vw, 800px" /></noscript></figure></div>
 <p>The command prints root as the only user with a UID of 0. If the output shows any non-root accounts with a UID of 0, delete them or change the UID to a non-zero value with <strong><code>usermod</code></strong>.&nbsp;</p>
-<h3 id="ftoc-heading-11" class="wp-block-heading ftwp-heading">9. Lock User Accounts After Login Failures</h3>
-<p class="h4">(Intermediate security mechanism)</p>
+<h3>9. Lock User Accounts After Login Failures</h3>
+<p>(Intermediate security mechanism)</p>
 <p>Locking user accounts after several login failures makes it harder for an attacker to guess or brute-force a password.</p>
 <p>The system works by setting the maximum number of login attempts per user. Once that number is reached, the account locks for a specified period. Another option is to install a system for unlocking the account, either automatically after a set time has elapsed or manually by an administrator.</p>
-<p>To achieve this, use different&nbsp;<a href="https://phoenixnap.com/glossary/identity-and-access-management" target="_blank" rel="noreferrer noopener">Identity Access Management (IAM) systems</a>. These tools block incoming traffic from IP addresses with failed login attempts, helping mitigate brute-force attacks or monitor log files and ban IP addresses with repeated failed login attempts.</p>
+<p>To achieve this, use different&nbsp; Identity Access Management (IAM) systems</a>. These tools block incoming traffic from IP addresses with failed login attempts, helping mitigate brute-force attacks or monitor log files and ban IP addresses with repeated failed login attempts.</p>
 <p>Writing custom scripts to parse log files, keep track of failed login attempts, and lock user accounts is also an option.</p>
-<h3 id="ftoc-heading-12" class="wp-block-heading ftwp-heading">10. Enable Two-Factor Authentication</h3>
-<p class="h4">(Intermediate security mechanism)</p>
+<h3>10. Enable Two-Factor Authentication</h3>
+<p>(Intermediate security mechanism)</p>
 <p>Two-factor authentication (2FA) is a security measure that adds an extra layer of protection. By requiring a secondary verification method, such as a one-time code sent to the user's mobile device, 2FA makes it much more difficult for unauthorized users to access sensitive information or systems.</p>
-<p>There are various ways to enable 2FA on Linux systems. Common methods include using <a href="https://phoenixnap.com/glossary/totp-time-based-one-time-password" target="_blank" rel="noreferrer noopener">TOTP (Time-based One-Time Password)</a> apps like <strong>Google Authenticator</strong> or a hardware token like a <strong>Yubikey</strong>. Certain Linux systems have built-in 2FA capabilities, such as <strong>PAM (Pluggable Authentication Modules)</strong>, that work with various authentication methods.</p>
-<h3 id="ftoc-heading-13" class="wp-block-heading ftwp-heading">11. Keep Linux Up to Date</h3>
-<p class="h4">(Basic security mechanism)</p>
-<p>Hackers exploit outdated software. To maintain Linux server security, keep the Linux kernel and software up to date. Different <a href="https://phoenixnap.com/glossary/what-is-a-linux-distribution" target="_blank" rel="noreferrer noopener">Linux distributions</a> offer various&nbsp;package managers&nbsp;to update packages manually, with <a href="https://phoenixnap.com/kb/yum-vs-apt" target="_blank" rel="noreferrer noopener">yum and apt</a> being the most popular.</p>
+<p>There are various ways to enable 2FA on Linux systems. Common methods include using TOTP (Time-based One-Time Password)</a> apps like <strong>Google Authenticator</strong> or a hardware token like a <strong>Yubikey</strong>. Certain Linux systems have built-in 2FA capabilities, such as <strong>PAM (Pluggable Authentication Modules)</strong>, that work with various authentication methods.</p>
+<h3>11. Keep Linux Up to Date</h3>
+<p>(Basic security mechanism)</p>
+<p>Hackers exploit outdated software. To maintain Linux server security, keep the Linux kernel and software up to date. Different Linux distributions offer various&nbsp; package managers&nbsp;to update packages manually, with yum and apt being the most popular.</p>
 <p>Another method includes automatic updates. Automatic updates are installed in the background without requiring any action from the user, making updating software easier and more convenient. However, these types of updates are also risky. </p>
-<div class="notice-warning">
-<div class="warning-icon-wrapper"><i class="fa fa-exclamation-triangle"></i></div>
-<div class="notice-text"><p><strong>Important</strong>: Automatic updates cause compatibility issues with other packages or result in unexpected changes to the system. In general, it is not recommended to run automatic updates on production servers.</p>
+
+<div ><p><strong>Important</strong>: Automatic updates cause compatibility issues with other packages or result in unexpected changes to the system. In general, it is not recommended to run automatic updates on production servers.</p>
 </div>
 </div>
-<h3 id="ftoc-heading-14" class="wp-block-heading ftwp-heading">12. Use Linux Security Extensions</h3>
-<p class="h4">(Intermediate security mechanism)</p>
+<h3>12. Use Linux Security Extensions</h3>
+<p>(Intermediate security mechanism)</p>
 <p>Linux security extensions are tools and features that provide additional security measures to a Linux operating system. These extensions help protect against misconfigured or compromised programs, defend against potential attacks, and enforce limitations on networks and programs.</p>
 <p>Popular Linux security extensions are:</p>
-<ul class="wp-block-list">
-<li><a href="https://phoenixnap.com/kb/selinux" target="_blank" rel="noreferrer noopener">SELinux (Security-Enhanced Linux)</a>&nbsp;is a security feature integrated into the Linux kernel that uses <a href="https://phoenixnap.com/glossary/mandatory-access-control-mac" target="_blank" rel="noreferrer noopener">Mandatory Access Control</a> (MAC) system. It allows administrators to control access to system resources by only allowing authorized users and processes. This ensures that only trusted parties access and modify important system information. SELinux is more common in RHEL and CentOS&nbsp;systems.</li>
-<li><a href="https://phoenixnap.com/kb/apparmor-vs-selinux" target="_blank" rel="noreferrer noopener">AppArmor</a>&nbsp;is a mandatory access control system that allows administrators to specify the permissions required by applications to access system resources. It's been a default feature of Ubuntu since version 7.10.&nbsp;</li>
+<ul>
+<li>SELinux (Security-Enhanced Linux) is a security feature integrated into the Linux kernel that uses  Mandatory Access Control</a> (MAC) system. It allows administrators to control access to system resources by only allowing authorized users and processes. This ensures that only trusted parties access and modify important system information. SELinux is more common in RHEL and CentOS&nbsp;systems.</li>
+<li>AppArmor</a>&nbsp;is a mandatory access control system that allows administrators to specify the permissions required by applications to access system resources. It's been a default feature of Ubuntu since version 7.10.&nbsp;</li>
 <li>TCP Wrappers are a security tool that provides basic access control for network services by checking the client's IP address against a list of allowed or denied addresses. The request is granted if the client's IP address is found in the <em>allow </em>list, and if it is found in the <em>deny </em>list, the request is rejected.</li>
 <li>PAM (Pluggable Authentication Modules) provides a flexible and centralized system for managing authentication on a Linux system. PAM allows administrators to configure the authentication system and choose the best methods for their security needs. Moreover, PAM makes it easier to enforce strong authentication policies and ensures that all applications and services use the same authentication system.</li>
 </ul>
-<h3 id="ftoc-heading-15" class="wp-block-heading ftwp-heading">13. Configure Linux Firewall&nbsp;</h3>
+<h3>13. Configure Linux Firewall&nbsp;</h3>
 <p class="h4">(Basic security mechanism)</p>
 <p>A&nbsp;<a href="https://phoenixnap.com/glossary/what-is-a-firewall" target="_blank" rel="noreferrer noopener">firewall</a>&nbsp;on a Linux system acts as the first line of defense against malicious network traffic. The firewall&nbsp;defines rules that govern what traffic is allowed and what is blocked. Sysadmins apply those rules to control incoming and outgoing network traffic, blocking unauthorized access and only allowing necessary services.</p>
 <p>The default Linux firewall is&nbsp;<a href="https://phoenixnap.com/kb/iptables-tutorial-linux-firewall" target="_blank" rel="noreferrer noopener">iptables</a>, a popular tool that provides packet filtering and manipulation capabilities for IPv4 and IPv6 network traffic. It filters network traffic,&nbsp;<a href="https://phoenixnap.com/kb/iptables-port-forwarding" target="_blank" rel="noreferrer noopener">forwards traffic</a>&nbsp;between network interfaces, and implements&nbsp;<a href="https://phoenixnap.com/glossary/nat-network-address-translation" target="_blank" rel="noreferrer noopener">network address translation (NAT)</a>.</p>
