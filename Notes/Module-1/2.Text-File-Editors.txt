@@ -1,0 +1,45 @@
+TEXT  EDITORS
+
+1. gedit    ---> Graphical Text editor
+2. vi or vim ---> Text editor available in all linux unix OS flavours 
+3. nano 
+
+vi/vim editor: 
+
+vi nuxtest  >> To create a file or open file
+vi Editor has 3 modes
+
+insert mode (press i key)   We insert a content. 
+escape mode (press Esc key)      (press 2 to three times)  
+command mode (shift:)
+
+ESC mode options:
+To copy number of lines 
+press (5yy)  to copy 5 lines 
+press (10yy)  to copy 10 lines 
+press (8yy)  to copy 8 lines 
+To paste (press p)
+To delete a line press dd
+to delete 5 lines press (5dd)
+to delete 15 lines press (15dd)
+to delete 7 lines press (7dd)
+to undo press (u)
+to search content /keyword (the word which we need search)
+press (n) for next 
+
+Command mode options:
+press  shift key+: 
+
+ESC two times
+:wq save & quit
+:w save only
+:q! quit without saving
+
+To set Line number 
+:set nu 
+
+
+
+
+
+

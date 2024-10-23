@@ -1,0 +1,34 @@
+Linux Basic Commands
+
+ls --> to list files in folder (in windows we use dir to list files) 
+cd / ---> Change directory to / (Linux total disk) Location
+pwd --> to see present working directory
+cd --> change directory  to user home directory
+cd --> Change to users home directory 
+date --> to view system date
+        date -s 10/20/2023   To set Date on Linux server
+				MM/DD/YY
+	date -s 10:30    To set time on Linux server 
+                
+arch --> to view OS architure 32 bit or 64bit
+uname -a --> to view OS  kernel version
+cat /etc/redhat-release --> to view os version
+cat /proc/cpuinfo --> to view system/server processor info
+free -h --> to view system/server ram memory info
+df -h   --> to view server disk partition info (like windows THISPC)
+cal    -->  to view calander
+mkdir song -->to create empty folder
+touch nuxtest  -->to create empty text  file
+rm -rvf song  -->to delete file/folder
+ rm - remove  
+	r-recursive  (in-depth All files) 
+  	v-verbose  (It will show command background funtion to foreground)
+  	f-force
+ifconfig  >> To view Server Ip address 
+cp red  blue >> to copy  file 
+cp -avf  data datanew >> To copy folder
+-a all 
+-v verbose 
+-f force 
+mv  red  white   >> to rename or move a file/folder  
+reboot --> to reboot a server 

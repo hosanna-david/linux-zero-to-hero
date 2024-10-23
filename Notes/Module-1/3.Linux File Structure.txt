@@ -1,0 +1,22 @@
+Linux File Structure
+
+#cd /bin  >> Binary files and basic commands will be  available here all users can execute this command.
+#cd /boot >> Booting files and Kernel has been located here. 
+#cd /dev  >> All device drivers for hardware device will be available here. 
+#cd /etc  >> System configuration files will be available here. 
+#cd /home >> Normal users home directory. 
+#cd /usr/local/lib | /usr/local/lib64 | /usr/lib and /usr/lib64 >> Libary files be loaded here. 
+#cd /media -- /mnt -- /opt --  /run  >> removable device mount point. 
+#cd /proc  >> Hardware information will be available here. 
+#cd /root  >> root users home directory. 
+#cd /sbin >> secure bin Binary files and commands will
+ be available here only root  users can execute this commands.
+
+#cd /sys  >> System paging files will be available  here. 
+#cd /tmp >> temporary files availble  here at 
+reboot it will be deleted automatically. 
+
+#cd /usr >> All softwares will be installed here. 
+#cd /var  >> Data partition all logs and database
+ mails will be saved here.
+

@@ -1,0 +1,47 @@
+Linux 4 Types of installation
+
+1.Graphical with non custom partition
+2.Minimal  with non custom partition
+3.Graphical with   custom partition
+4.Minimal with  custom partition
+
+Linux Mandatory Partitions: 
+
+/boot/efi >>> 1500MB
+/         >>> 9000MB
+swap      >>> 1600MB
+
+
+1.Graphical with non custom partition
+
+Software selection Graphical
+install destination Automatic 
+
+2. Minimal  with non custom partition
+
+3. Graphical with   custom partition
+select custom  in install  destination 
+
+/boot >>> 1500MB
+/     >>> 9000MB
+swap  >>> 1600MB
+
+4. Minimal with  custom partition
+
+Linux Mandatory Partitions
+
+/boot >>> 1500MB
+/     >>> 9000MB
+swap  >>> 1600MB
+
+
+Redhat 8 Install Graphical and Minimal with custom partition 
+
+/boot/efi  >> 1600MB 
+swap       >> 1600MB
+/          >> 9000MB
+/nux       >> 2000MB
+/data      >> 1000MB
+/backup    >> 1000MB
+
+
