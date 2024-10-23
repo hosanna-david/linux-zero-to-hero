@@ -1,0 +1,61 @@
+Unit-03 Bootin Process
+
+POST POWER  on self test. 
+It will check hardware check list and 
+throw beep codes if any device failure. 
+
+
+Bios  - Basic input output system. 
+
+
+Bios will be loaded on bios 
+Chipset on motherboard. 
+Basic Input output operations. 
+  It will set boot priority  either
+ Harddisk or CD rom.  
+
+MBR - Master  Boot Recorder 
+All storage device it will be available 
+ like pendrive hardisk thumbdrive cdrom. 
+8 GB >> 7.5 will usable 
+ remaining space will be MBR.  
+MBR has 3 compeonts 
+1. 446 bytes primary boot loader
+2. 64 bytes partition table info 
+3. 2 bytes check sum 
+
+ 
+64 bytes partition table info 
+
+File and their save loction like sector number
+ on an harddisk will available here. 
+
+ bike.jpg >> 1000
+nike.jpg >> 2000 
+
+3. 2 bytes check sum 
+
+To  check file integrity or 
+to validate the file
+
+Primary boot loader  grub
+
+It will provide boot  files when OS is booting 
+
+Windows bootloader >>>> NTLDR 
+ALL linux unix android >>> GRUB 
+
+Advantages of GRUB 
+1. Security (we can set a password for grub)
+2. Human Interaction 
+
+
+
+
+
+
+
+
+
+
+                                                          

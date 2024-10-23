@@ -1,0 +1,58 @@
+Unit-08 Backup file systems with tar archives
+
+1. File level backup 
+
+2. Snapshot level backup 
+
+File level backup : It will copy file or folder in compressed 
+format and we can restore it later. 
+folder to folder copy in compressed format. 
+
+Example : CDP , RSYNC , BACKULLA , R1SOFT. 
+
+Snapshot level Backup:  Vm to vm copy. We can restore the 
+VM when needed. 
+
+Example: Veeam, Phdvba. 
+
+
+ALL backups will be in  compressed format  
+
+1. Security --->  we cannot corrupt a single file in compressed format.  
+
+compress format 
+Compress softwares
+winrar winzip 7zip 
+tar gunzip bunzip   ------> Linux compress software tools. 
+
+2. To reduce  the size 
+
+
+
+cp >> copy 
+-a all 
+-v  verbose 
+-f force
+
+/etc/*  --- Copy all etc folders and files
+/backup/ -- Destination folder/directory
+
+du -sch  /backup  --> to view folder size on a linux server
+
+
+tar >> compress command
+-c create 
+-v verbose 
+-z gz format 
+-f force 
+
+
+
+
+
+
+
+
+
+
+

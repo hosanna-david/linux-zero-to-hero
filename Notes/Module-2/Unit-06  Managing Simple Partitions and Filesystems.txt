@@ -1,0 +1,38 @@
+
+Unit-6  Managing Simple Partitions and Filesystems
+
+Add a new harddisk to Linux  server format with ext4 filesystem and mounting it to an folder. 
+
+Attach  a new harddisk for 15GB and mount to /data folder on a linux server. 
+
+
+
+To add a harddisk on a Linux Virtual Machine 
+Go to Actions >> Edit Settings 
+
+fdisk -l >>> To view attached Storage device on a linux server. 
+mkfs.ext4  >> To format a hardisk on a linux server. 
+mkfs >> make file system
+ext4 > > extended version 4 (linux file system type)
+eg: in windows we use NTFS & FAT 
+NTFS >> Newtechnolgy File systems 
+FAT >> File allocation table 
+
+
+Mount  >> To assign a hardisk or partition to a folder. 
+
+Ex: c:/ drive D:/ drive like in Linux it will assign to folder. 
+
+/etc/fstab >> To mount a harddisk/partition permantely 
+
+Task 1: 
+
+
+Attach  a new harddisk for 10GB and mount to /nux folder on a linux server. 
+Attach  a new harddisk for 5GB and mount to /backup folder on a linux server. 
+
+NTFS  >> Newtechnology File system 
+FAT >> File allocation table
+
+Major >> Security where NTFS is higly secured. 
+

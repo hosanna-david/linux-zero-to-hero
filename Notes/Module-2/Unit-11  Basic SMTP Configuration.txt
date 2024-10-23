@@ -1,0 +1,43 @@
+Unit-11  Basic SMTP Configuration
+SMTP --- Simple Mail transfer protocol
+Port Number 25
+Email Client protocols: 
+
+pop3 port number 110
+imap port number 143 
+
+
+Mails servers: 
+
+Postfix 
+Sendmail 
+Zimbra 
+Exim 
+
+Windows 
+Exchange Server
+Mail Enable
+
+Mail Server Pre requirements: 
+
+1. Public IP 
+2. Host name or Domain name needs to be purchased 
+3. Linux  Server.
+
+Unit-15  Caching-Only DNS Server
+
+DNS DOmain name system 
+
+1. Forwared DNS name to ip address eg: nux.com >>> 10.10.10.10
+2. Reverse DNS ip to name eg: ip to name 10.10.10.10 <<< nux.com 
+
+
+
+
+
+
+
+
+
+
+                    

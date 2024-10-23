@@ -1,0 +1,55 @@
+
+Unit-13 Installing and Managing Software
+Unit-10  Installing and Removing Packages
+
+windows software extension: 
+*.exe 
+*.msi >> microsoft installer
+
+Linux Software extension:
+*.rpm >> redhat package manager
+*.deb >> for ubuntu free bsd  linux flavours 
+
+Android
+*.apk
+
+
+
+In linux servers most of the softwares will  be available in OS DVD itself. 
+
+Linux Software Installation:
+
+yum or dnf configuration
+
+
+
+df -h  >> To view DVD drive is mounted or not 
+in linux DVD drive is attached as "sr0"
+
+copy DVD drive mount point. 
+
+
+
+
+yum >> yellow dog updater modified
+dnf >> Dandified yum (its latest version on yum)
+
+
+
+LAMP -- > LINUX APACHE PHP MYSQL 
+
+All websites and applications need a Lamp server to 
+run. 
+
+
+
+
+
+
+
+
+
+
+
+
+

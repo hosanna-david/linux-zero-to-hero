@@ -1,0 +1,6 @@
+Unit-7  Configure Ntp services.
+Network Time Protocol 
+It will update date and time over internet/network 
+This protocol runs on UDP(user datagram protocol)
+NTP portnumber 123 
+

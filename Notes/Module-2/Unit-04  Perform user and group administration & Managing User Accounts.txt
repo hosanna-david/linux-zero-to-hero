@@ -1,0 +1,75 @@
+Unit-04  Perform user and group administration & Managing User Accounts
+
+To create a user in linux servers 
+to manage a user and to modify user property. 
+
+useradd  sam  >> To add a user on linux server.
+passwd sam  >> To set password for the user. 
+
+vi /etc/passwd   >>> All user settings will be available here. 
+
+
+sam:x:2004:2004::/home/sam:/bin/bash
+sam >>> username 
+x  >>> password field
+2004 >>> uid  (user id)
+2004 >> gid (group id)
+user id & group id
+ 
+0 - 999 >> system reserved users
+1000 - 65535 >> normal users 
+
+Service Accounts : System users created for service functions.
+We cannot login with service accounts. 
+
+Support Accounts :  Users which created for accessing server and these users are 
+normal users. 
+
+:: >>> comment field
+/home/sam >> home directory
+/bin/bash >> shell To gain Terminal access 
+/sbin/nologin >> to block shell access (Terminal will not open for this user)
+ 
+vi /etc/shadow  >> In linux all users password will be saved here. 
+vi /etc/group   >> By default when we create a user linux
+ will create a  group with respective user name
+
+
+
+useradd -u 3000 -d /media/john  -c salesteam -s /sbin/nologin john
+
+-u uid
+-d home directory
+-c comment
+-s shell
+
+john >> username you can give any name 
+
+
+Create a user name sarah with uid 4500. 
+
+ useradd -u 4500 sarah
+
+Create a user peter  with home directory  /media.
+
+ useradd -d /media/peter peter 
+  
+
+create a user with non interactive shell named floyd
+useradd -s /sbin/nologin floyd
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+

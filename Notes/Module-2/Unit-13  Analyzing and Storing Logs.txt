@@ -1,0 +1,35 @@
+Unit-13  Analyzing and Storing Logs
+
+
+Linux Logs will be saved in /var/log/  folder  location 
+
+tail -f  >>>> to view last updated 10 lines of a text file
+tail -f /var/log/messages   >> All common logs will be available here
+tail -f /var/log/secure >> User auth and user admin logs will be available here. 
+tail -f /var/log/cups/   >>> Common unix printing system Printer logs will be available here. 
+tail -f /var/log/chrony/  >> NTP logs will be available here. 
+tail -f /var/log/dnf.log  >> Software install and Uninstall logs will be available here. 
+tail -f /var/log/boot.log >> Server booting logs will be available here (all  loaded service info will be available here) 
+tail -f /var/log/Xorg.9.log >>> Server Hardware logs will be available here. 
+tail -f /var/log/firewalld >>> Server firewall logs will be available here. 
+
+
+
+tail -f /var/log/messages    (common logs will be avilable) 
+
+tail -f  To view last 10 lines of a text file. 
+tail -f /var/log/secure  (user login logs and user administration logs will be available here)
+tail -f /var/log/firewalld (firewall or iptables logs will be shown here)
+tail -f /var/log/dnf.log   (software uninstall and install logs will be available  here
+
+
+
+
+
+
+
+
+
+
+
+.

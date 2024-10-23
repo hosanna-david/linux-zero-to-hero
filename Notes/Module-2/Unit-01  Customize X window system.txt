@@ -1,0 +1,8 @@
+Unit-01  Customize X window system.
+
+X windows ---> Graphical layout
+In Linux  we have more themes to use 
+the popular one is GNOME 
+Older version we use KDE  its language will be different
+
+gnome-control-center  to open a control center  on a linux server.

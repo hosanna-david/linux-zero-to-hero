@@ -1,0 +1,22 @@
+Unit-09  SELinux Overview       	
+
+Security Enhanced Linux:
+
+In Linux Every folders and Files will  be having a 
+SELINUX CONTEXT which prevents to  gain access from 
+malicious code. 
+
+selinux is developed by NSA  (National Security Agency)
+
+To view selinux context 
+
+ls -lZ  (capital Z)  
+
+enforcing >> Fully blocked 
+permissive >> blocked but it will
+					throw logs 
+disabled >> Fully disabled allow 
+						all. 
+
+ 
+

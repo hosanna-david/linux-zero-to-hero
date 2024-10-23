@@ -1,0 +1,9 @@
+Unit-2  Linux Administration in graphical
+
+
+To  configure Linux servers on graphical mode. 
+
+
+Type
+
+gnome-(press tab key 3 to 4 times) 

@@ -1,0 +1,14 @@
+Unit-12 The Kernel 
+
+
+Its a heart of OS 
+In linux kernel will  be located on /boot directory  with files named: 
+vmlinuz-4.18.0.-147.el8.x86_64
+initramfs-4.18.0.-147.el8.x86_64.img
+The kernel will  load device drivers  for all hardware compents while system is booting. 
+
+
+
+
+
+
