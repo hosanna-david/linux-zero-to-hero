@@ -1,0 +1,53 @@
+Unit-19  Troubleshooting Boot Process
+Unit-5  Backup and Recovery
+Unit-17  System Recovery Techniques 
+ 
+Stage 1: 
+     Grub  /boot/grub2/grub.cfg  >>>  Boot loader Linux grub 
+        /boot/efi/EFI/redhat/grub.cfg  ---- > GRUB FILE LOCATION 
+vi /boot/efi/EFI/redhat/grub.cfg
+
+Stage 2:
+	 cd /boot/ 
+# ls ---> TO LIST FILES IN BOOT FOLDER
+
+ 
+     * vmlinuz.4.............
+      * intrd4..............
+
+Kdump >> Kernel dump it will automatically fix the kernel 
+errors in Latest Linux servers. 
+
+mv  /boot/init*  /mnt/  ----> TO MOVE ALL INITRD... FILES TO /MNT FOLDER    
+mv /boot/vmlin* /mnt/  ---> TO MOVE ALL VMLINUX.. FILES TO /MNT  FOLDER 
+
+
+chroot /mnt/sysimage >> to mount corrupted OS 
+mv /mnt/* /boot/
+ 
+
+Change boot priority from hard disk to DVD drive 
+
+Stage 3:   vi /etc/systemd/system/default.target
+
+Runlevel		Target Units							Description
+
+0			runlevel0.target / poweroff.target		Power off the system.
+1			runlevel1.target / rescue.target			Single User mode    
+2			runlevel2.target / multi-user.target		multi-user mode.
+3			runlevel3.target / multi-user.target		multi-user mode. minimal install text mode
+4			runlevel4.target / multi-user.target		multi-user mode.
+5			runlevel5.target / graphical.target		Graphical mode.  Graphical Login 
+6			runlevel6.target / reboot.target			Reboot the system.
+
+
+Change Default Runlevel
+
+
+
+Stage 4:  /etc/fstab  >> File system mounting information will be available here. 
+
+Stage 5:   /etc/passwd  >> User settings and configuration available here. 
+
+Stage 6:   /etc/shadow >> User login passwords will be saved here. 
+

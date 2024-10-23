@@ -1,0 +1,58 @@
+Unit-2  Security Administration using Redhat Linux
+
+Protocol  :  Set of rules governed for communication. 
+
+0 - 65535 protocols available 
+
+eg: http, ftp, smtp, ntp, dns, https,ssh.
+*****************************************************************************************************************
+Every protocol is having a its own port number. 
+
+S.NO.	Port Numbers	Network Protocols								Transport Protocols
+1	         20, 21   		(FTP) File Transfer Protocol								TCP
+2			22			(SSH) Secure Shell	 										    TCP and UDP
+3			23			Telnet														         TCP
+4			25			(SMTP) Simple Mail Transfer Protocol					TCP
+6			53			(DNS) Domain Name System	 							     TCP and UDP
+7			67, 68		(DHCP) Dynamic Host Configuration Protocol		 UDP
+9		     80			(HTTP) HyperText Transfer Protocol					       TCP
+10		   110		       	(POP3) Post Office Protocol							       TCP
+12		   123				(NTP) Network Time Protocol							   UDP
+14	 	   143				(IMAP4) Internet Message Access Protocol			  TCP and UDP
+15		   161, 162		(SNMP) Simple Network Management Protocol	  TCP and UDP
+17		  443				(SSL) Secure Sockets Layer with HTTP				  TCP and UDP
+19	 	  3389			Remote Desktop Protocol									  TCP and UDP
+
+********************************************************************************************************
+
+ATTACKS 
+
+1. DDOS ATTACK : 
+
+Distributed  Denial of Service. 
+
+
+2. Bruten Force Attack:  
+
+Username password   attack
+
+
+###########################################################################
+
+Firewall:  Port based or IP address based filters 
+We can block or allow ip address in firewalls. 
+Linux Fire wall is managed by IPTABLES / firewalld 
+
+To block and allow IP address  on a linux server. 
+
+iptables -L   >>  To list/view  all Firewall rules 
+
+iptables -F   >> To flush/remove  all existing firewall rules 
+
+iptables -I INPUT -s 10.10.10.10 -j REJECT   >>> To block a ipaddress 
+iptables -I INPUT -s 10.10.10.11 -j  ACCEPT  >>> To allow a ip address 
+
+iptables >> command 
+-I  >> Insert
+-s >> source 
+-j >> Jump

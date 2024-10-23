@@ -1,0 +1,133 @@
+Unit-10 Manage Access to Files
+
+Create a folder /mail/database and assign permissions  as follows
+
+
+mkdir /mail/
+mkdir /mail/database
+or
+mkdir  -p /mail/database 
+
+Task 1: 
+
+owner read write execute   
+
+group read and execute     
+
+others write only      
+
+ 
+  Create a folder /mail/data and assign permissions  as follows
+
+Task 2: 
+
+Owner read & execute   
+
+Group read & write & execute  
+ 
+Others read only  
+chmod  
+
+
+ Create a folder /mail/redhat and assign permissions  as follows
+Task 3: 
+
+Owner read & write     
+
+group read only     
+
+others execute only
+
+
+
+
+ 
+ls -l  >> to list a   long listing of files and folders(it will show all the info)
+
+-rw-r--r--. 1 root root 0 oct  2 23:55 resume 
+
+- file or folder (- file or  d directory)
+rw-  owner (The user who creates the file is called owner of a file)
+r--  group  (The owner will by default group)
+r--  others (Rather than owner/group all others consider as others)
+. Special permission (if its + the file/folder has some special permissions)
+1  file  Number of  files/folders count
+root owner
+root group
+0 file size in KB
+Nov 8   11:34 time stamp
+nux  filename
+
+
+
+read  >> 4
+write >> 2
+Execute > 1
+
+Task 1: 
+owner read write execute     
+group read and execute    
+others write only     
+
+ 
+
+Task 2: 
+Owner read & execute   
+Group read & write & execute    
+Others read only   
+
+ 
+
+
+Task 3: 
+Owner read & write      
+group read only           
+others execute only      
+
+
+
+Unit-11 Manage Access to Files
+
+Create a folder /mail/database and assign permissions  as follows
+
+mkdir /mail/
+mkdir /mail/database
+or
+mkdir  -p /mail/database 
+
+Task 1: 
+
+owner read write execute   
+
+group read and execute     
+
+others write only      
+
+ 
+  Create a folder /mail/data and assign permissions  as follows
+
+Task 2: 
+
+Owner read & execute   
+
+Group read & write & execute  
+ 
+Others read only  
+chmod  
+
+
+ Create a folder /mail/redhat and assign permissions  as follows
+
+Task 3: 
+
+Owner read & write     
+
+group read only     
+
+others execute only
+ 
+
+**********Task 2nd Module*********
+
+
+https://linuxadminforu.blogspot.com/2022/07/linux-2ndmodule-tests.html

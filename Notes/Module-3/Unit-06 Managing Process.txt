@@ -1,0 +1,70 @@
+Unit-6 Managing Process 
+
+
+top -c   >. To view all current running process on  a linux server.  (As windows task manager)
+
+Process , Job, Thread, Semaphore 
+
+PROCESS : Which runs on only foreground  eg: firfox chrome
+SERVICE  : Runs in foreground and background eg; antivirus 
+
+top -c   >> to view all current running process 
+
+Press  Shift key +m(key)   >>>> Sort with memory usage
+
+Orphan process Zombie   
+If a process does not know his parent 
+ process information its called as Zombie
+Firefox >> java, flash child process 
+
+PID  >> Process ID 
+Each &  every process  will have a unique process  id in all operating system. 
+It is allocated by kernel. 
+
+
+
+ 
+load avearge  Server load  will be calculated by task and running process 
+Load Average:    0-3 normal 
+Load Average:  <=3 abnormal 6000
+
+pr >> previous nice value 
+ni >> Nice value 
+Nice Value To set priority  on Linux servers for each  process . 
+ 
+-20 to +19 
+
+-20 very very high priority
+0 default
++19 low priority 
+
+press Shift+m (key) To sort with RAM memory usage 
+Press r (key) to renice(to change priority) a process 
+ Press k(key) to kill a process
+
+Sigterm
+0 Kill child process only
+9 Kill child and Parent process
+15 Kill only parent process
+
+
+z (Press z key)>> to high light colour 
+t (Press t key) >>  To disable task 
+l (Press l key) >>  To disable load averarge
+m (Press m key) >> To disable Memory 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

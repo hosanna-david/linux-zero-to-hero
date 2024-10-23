@@ -1,0 +1,25 @@
+Unit-8  Web Server Configuration
+
+
+Webserver Applications - We can host a website using these technology. 
+
+Apache     >>     in linux  software name http
+
+Nginx      >>   It will time out mostly used in online games and netbanking sites 
+
+Tomcat    >>     java based application hosting
+
+JBOSS  >>     java based application hosting
+
+Lightspeed   >>   Best for site speed and permormance 
+
+IIS     >>         (internet information service) windows
+
+
+
+
+
+
+
+
+                                                                                         

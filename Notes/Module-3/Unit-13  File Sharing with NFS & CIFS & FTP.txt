@@ -1,0 +1,47 @@
+Unit-13  File Sharing with NFS &
+File Sharing with CIFS &
+File Sharing with FTP
+
+
+File Sharing with NFS
+
+Network File Sharing  
+Linux to Linux Sharing 
+
+Portnumber 2049 
+
+mkdir /public 
+vi  /etc/exports
+
+/public *(rw,sync)  >> Share enabled for global access. 
+/public 15.15.15.100(rw,sync) >> Only accessible by 15.15.15.100 system.
+/public 15.15.15.0/24(rw,sync) >> accessible by 15.15.15.0  network
+
+
+
+File Sharing with CIFS
+Common internet file sharing 
+Samba  (another name)
+Linux to Windows Sharing 
+
+
+Port Number 139 & 445 
+
+
+
+File Sharing with FTP
+
+FTP File transfer protocol 
+port number 21/20
+
+
+To check Go to  activities >> Open Firefox >> type in address bar 
+ftp://15.15.15.15(ftp server ip) 
+
+
+
+
+
+
+
+

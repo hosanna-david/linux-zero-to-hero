@@ -1,0 +1,13 @@
+Unit-7  Advanced Network Configuration
+netstat -tulp
+
+netstat >> to view network  open ports on a linux server
+-t >> tcp 
+-u udp 
+-p port 
+-l list 
+
+tcpdump >>> to  trace/monitor all network traffic on a 
+linux server 
+
+lsof -i >> to view all open ports/sockets on a linux server

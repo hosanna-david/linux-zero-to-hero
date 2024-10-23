@@ -1,0 +1,20 @@
+Unit-9  Web Server Additional Configuration
+
+APACHE CONFIGIRATION PREREQUIREMENTS:
+
+1. Ip address
+2. yum configuration
+
+Unit-9  Web Server Additional Configuration
+
+Virtual hosting: Single ip single server multiple websites
+
+Task1:
+CONFIGURE 5 WEBSITES ON LINUX SERVER WITH DIFFERENT  NAMES
+
+test.com
+cts.com
+wipro.com
+nux.com
+ibm.com
+

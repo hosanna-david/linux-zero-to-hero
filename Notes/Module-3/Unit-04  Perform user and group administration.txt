@@ -1,0 +1,78 @@
+Unit-4  Perform user and group administration
+Unit-8  Managing User Accounts
+
+useradd sam  To create a  user.
+passwd sam    To create a password for user. 
+
+
+
+/etc/passwd  --> All linux user settings will  be 
+saved here. 
+
+san   >> username
+x       >> password field
+1001  >> uid (user id)
+1001  >> gid (group id)
+
+User id and group id 
+
+0 - 999 system reserved  users 
+1000 - 65535 normal users 
+
+Service account users are system users: 
+
+Created for linux service management with uid (0-999) 
+example : chrony , bin , 
+
+Support account users normal users  uid (1000 - 65535 )which we create for login and access  the server.
+ 
+The  user accounts which we created for normal users. 
+eg: sam , john , nux 
+
+
+:  :  >>>> Comment Field
+ (We can give surname)
+
+/home/sam  >> Home directory 
+
+shell access : /bin/bash ---> Shell access enabled. 
+                      /sbin/nologin --> Shell access disabled. No terminal access 
+
+useradd >> to add user
+-u uid 
+-d home directory
+-s shell
+-c comment 
+
+/etc/shadow >>> Users passwords  saved by encrypted format. 
+
+/etc/group  >>> In linux when create user it will create a new group with same user name
+by default. 
+GROUP::  A bunch of  users we can add in a group
+
+
+
+
+Create user san  with uid 5000
+
+ 
+    useradd -u 5000 san 
+
+
+create a user raj with document root /data
+
+ useradd -d /data/raj raj 
+
+create a user natasha with non  interactive shell
+
+useradd -s /sbin/nologin natasha
+
+
+
+ 
+
+
+
+ 
+
+

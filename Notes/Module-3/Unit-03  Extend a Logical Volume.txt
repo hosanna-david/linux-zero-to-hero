@@ -1,0 +1,63 @@
+Unit-3  Extend a Logical Volume
+
+LVM 
+
+Logical Volume Manager 
+
+Unlimted Storage Solutions 
+
+We can increase and decrease the harddisk partition when   needed 
+without any downtime on Linux servers. 
+
+
+UNLIMITED STORAGE  LVM 
+
+
+
+TASK 1: 
+
+
+Add a new harddisk for  20gb
+Create a volume group movies
+create a  LV tamil for 15GB and
+ mount to  /tamil folder
+increase the disk to 19GB
+Now increase the disk to  30GB 
+by adding new disk 
+Now increase the disk to  
+100GB by adding new disk 
+
+
+
+
+pvcreate >> physical volume create 
+pvdisplay >> To view physical volume info
+vgcreate >> Volume group create
+vgdisplay >> To view  volume group info.
+lvcreate  >> logical volume create 
+lvdisplay >> To view Logical volume.
+
+lvcreate >> Logical volume Create 
+-L  >> rounded size 
+-n >> new 
+tamil >> Logical volume name 
+movies >> volumegroup name 
+
+vgextend movies /dev/sdc
+Now increase the disk to  30GB by adding new disk 
+lvextent -L 30GB  /dev/mapper/movies-tamil
+resize2fs   /dev/mapper/movies-tamil
+
+
+LAB 1 
+
+
+Add a new harddisk for  15gb
+Create a volume group datastore
+create a  LV facebook for 10GB and mount to  /facebook
+increase the disk to 14GB
+Now increase the disk to  35GB by adding new disk 
+
+
+
+

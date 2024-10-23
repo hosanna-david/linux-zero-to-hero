@@ -1,0 +1,10 @@
+Unit-14 Managing Processes
+
+To view current running process 
+
+ps -aux 
+
+-a all process 
+-u  user 
+-x executable 
+

@@ -1,0 +1,9 @@
+Unit-12  Caching-Only DNS Server
+
+Domain name server
+
+Forward DNS Name to ip ex: google.com   >>> 10.10.10.10
+
+
+Reverse DNS
+Ip to name ex: 10.10.10.10  <<<<< google.com 

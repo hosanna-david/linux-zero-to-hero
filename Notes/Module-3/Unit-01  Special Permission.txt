@@ -1,0 +1,35 @@
+Unit-01  Special Permission
+
+ACL  -----> Access Control List 
+ 
+Two types of ACL: 
+
+File level ACL:     To allow/deny    access to  users for  files/folders 
+Network  level ACL:     To allow/deny    access to   networks 
+
+
+Create a folder /public and assign Permissions  as follows:
+ 
+user sam need to read and write Permissions 
+user  john needs to write and execute  Permissions 
+user raj needs to readonly  Permissions 
+
+
+setfacl >> Set file level ACL 
+-m >>> Modify 
+u  >> user
+sam >> username
+rw- >> permissions (read and write)
+/public  >> Folder name or File Name 
+
+
+ATTRIBUTES 
+
+NON changeable file/folder  permissions.
+We cannot delete or modify the file if its is been  attributed.
+
+chattr  >> change attribute
++i >> Add atttribute permissions
+-i >> to remove attribute permission
+/public >>>  file or folder name 
+
