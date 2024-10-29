@@ -31,3 +31,78 @@ Linux commands I used 99% of the time:
 5. `lsof` - List open files and associated processes.
 6. `tail -f /var/log/*.log`  - checking the logs is important 
 
+System Intelligence:
+• `htop` - Like top, but actually useful
+• `df -h` - Because disk space issues find you
+• `netstat -tulpn` - Your network's story
+• `lsof` - What's using that port?
+• `ps aux | grep` - Finding that runaway process
+• `dmesg` - Kernel's gossip channel
+
+File Operations:
+• `find . -name` - Your file search superhero
+• `tar -xvf` - Unzip like a pro
+• `rsync` - scp's smarter cousin
+• `sed -i` - Stream editing wizard
+• `awk` - Text manipulation magic
+• `grep -r` - Find text like a detective
+
+Container Life:
+• `docker stats` - Container vital signs
+• `docker logs -f` - Live container stories
+• `crictl pods` - Kubernetes container whisperer
+• `kubectl get pods` - K8s status check
+
+Monitoring Magic:
+• `tail -f` - Log watching party
+• `watch` - Command on repeat
+• `vmstat` - Memory tales
+• `iostat` - Disk performance poetry
+
+Network Ninja:
+• `curl -v` - HTTP storyteller
+• `nc` - Network swiss army knife
+• `dig` - DNS detective
+• `ss` - Socket statistics
+
+Security Stuff:
+• `chmod` - Permission painter
+• `chown` - Ownership wizard
+• `openssl` - Certificate craftsman
+• `ssh-keygen` - Key creator
+
+Process Control:
+• `systemctl` - Service sorcery
+• `journalctl` - Log time machine
+• `kill -9` - Process terminator
+• `nice` - Priority painter
+
+Performance Profiling:
+• `strace` - System call spy
+• `tcpdump` - Network packet poet
+• `sar` - System activity reporter
+• `perf` - Performance profiler
+
+Text Wrangling:
+• `cut -d` - Column collector
+• `sort | uniq -c` - Pattern finder
+• `tr` - Character changer
+• `wc -l` - Line counter
+
+File System:
+• `du -sh` - Directory size detective
+• `fdisk -l` - Disk detective
+• `mount` - filesystem connector
+• `ln -s` - Symlink sorcerer
+
+Shell Shortcuts:
+• `history` | grep - Command time machine
+• `!!` - Last command replay
+• `ctrl+r` - Reverse search magic
+• `alias` - Command shortcut creator
+
+Miscellaneous Mastery:
+• `tee` - Output splitter
+• `xargs` - Command multiplier
+• `at` - Job scheduler
+• `screen/tmux` - Terminal multiplexer
