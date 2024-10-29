@@ -32,77 +32,77 @@ Linux commands I used 99% of the time:
 6. `tail -f /var/log/*.log`  - checking the logs is important 
 
 System Intelligence:
-• `htop` - Like top, but actually useful
-• `df -h` - Because disk space issues find you
-• `netstat -tulpn` - Your network's story
-• `lsof` - What's using that port?
-• `ps aux | grep` - Finding that runaway process
-• `dmesg` - Kernel's gossip channel
+1. `htop` - Like top, but actually useful
+2. `df -h` - Because disk space issues find you
+3. `netstat -tulpn` - Your network's story
+4. `lsof` - What's using that port?
+5. `ps aux | grep` - Finding that runaway process
+6. `dmesg` - Kernel's gossip channel
 
 File Operations:
-• `find . -name` - Your file search superhero
-• `tar -xvf` - Unzip like a pro
-• `rsync` - scp's smarter cousin
-• `sed -i` - Stream editing wizard
-• `awk` - Text manipulation magic
-• `grep -r` - Find text like a detective
+1. `find . -name` - Your file search superhero
+2. `tar -xvf` - Unzip like a pro
+3. `rsync` - scp's smarter cousin
+4. `sed -i` - Stream editing wizard
+5. `awk` - Text manipulation magic
+6. `grep -r` - Find text like a detective
 
 Container Life:
-• `docker stats` - Container vital signs
-• `docker logs -f` - Live container stories
-• `crictl pods` - Kubernetes container whisperer
-• `kubectl get pods` - K8s status check
+1. `docker stats` - Container vital signs
+2. `docker logs -f` - Live container stories
+3. `crictl pods` - Kubernetes container whisperer
+4. `kubectl get pods` - K8s status check
 
 Monitoring Magic:
-• `tail -f` - Log watching party
-• `watch` - Command on repeat
-• `vmstat` - Memory tales
-• `iostat` - Disk performance poetry
+1. `tail -f` - Log watching party
+2. `watch` - Command on repeat
+3. `vmstat` - Memory tales
+4. `iostat` - Disk performance poetry
 
 Network Ninja:
-• `curl -v` - HTTP storyteller
-• `nc` - Network swiss army knife
-• `dig` - DNS detective
-• `ss` - Socket statistics
+1. `curl -v` - HTTP storyteller
+2. `nc` - Network swiss army knife
+3. `dig` - DNS detective
+4. `ss` - Socket statistics
 
 Security Stuff:
-• `chmod` - Permission painter
-• `chown` - Ownership wizard
-• `openssl` - Certificate craftsman
-• `ssh-keygen` - Key creator
+1. `chmod` - Permission painter
+2. `chown` - Ownership wizard
+3. `openssl` - Certificate craftsman
+4. `ssh-keygen` - Key creator
 
 Process Control:
-• `systemctl` - Service sorcery
-• `journalctl` - Log time machine
-• `kill -9` - Process terminator
-• `nice` - Priority painter
+1. `systemctl` - Service sorcery
+2. `journalctl` - Log time machine
+3. `kill -9` - Process terminator
+4. `nice` - Priority painter
 
 Performance Profiling:
-• `strace` - System call spy
-• `tcpdump` - Network packet poet
-• `sar` - System activity reporter
-• `perf` - Performance profiler
+1. `strace` - System call spy
+2. `tcpdump` - Network packet poet
+3. `sar` - System activity reporter
+4. `perf` - Performance profiler
 
 Text Wrangling:
-• `cut -d` - Column collector
-• `sort | uniq -c` - Pattern finder
-• `tr` - Character changer
-• `wc -l` - Line counter
+1. `cut -d` - Column collector
+2. `sort | uniq -c` - Pattern finder
+3. `tr` - Character changer
+4. `wc -l` - Line counter
 
 File System:
-• `du -sh` - Directory size detective
-• `fdisk -l` - Disk detective
-• `mount` - filesystem connector
-• `ln -s` - Symlink sorcerer
+1. `du -sh` - Directory size detective
+2. `fdisk -l` - Disk detective
+3. `mount` - filesystem connector
+4. `ln -s` - Symlink sorcerer
 
 Shell Shortcuts:
-• `history` | grep - Command time machine
-• `!!` - Last command replay
-• `ctrl+r` - Reverse search magic
-• `alias` - Command shortcut creator
+1. `history` | grep - Command time machine
+2. `!!` - Last command replay
+3. `ctrl+r` - Reverse search magic
+4. `alias` - Command shortcut creator
 
 Miscellaneous Mastery:
-• `tee` - Output splitter
-• `xargs` - Command multiplier
-• `at` - Job scheduler
-• `screen/tmux` - Terminal multiplexer
+1. `tee` - Output splitter
+2. `xargs` - Command multiplier
+3. `at` - Job scheduler
+4. `screen/tmux` - Terminal multiplexer
